@@ -41,7 +41,7 @@ namespace Chess
             InitializeComponent();
             ConnectToServer();
 
-            chessSprites = new Bitmap("Z:\\Щарпы\\Check-check\\ChessGame\\Chess\\chess .png"); 
+            chessSprites = new Bitmap("C:\\Users\\Всеволод\\source\\repos\\Check-check\\ChessGame\\Chess\\chess .png"); 
             //Не забудь поменять
 
             Init();
