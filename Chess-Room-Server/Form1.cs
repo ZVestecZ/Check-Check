@@ -33,7 +33,7 @@ namespace Chess_Room_Server
                 serverSocket.Bind(new IPEndPoint(ipAddress, 8080));
                 serverSocket.Listen(10);
 
-                Console.WriteLine("Сервер запущен на 127.0.0.1:8080. Ожидание игроков...");
+                MessageBox.Show("Сервер запущен на 127.0.0.1:8080. Ожидание игроков...");
 
                 while (isRunning)
                 {
@@ -47,7 +47,7 @@ namespace Chess_Room_Server
                     clientThread.IsBackground = true;
                     clientThread.Start();
 
-                    Console.WriteLine($"Новое подключение: {clientSocket.RemoteEndPoint}");
+                    MessageBox.Show($"Новое подключение: {clientSocket.RemoteEndPoint}");
 
                     if (clients.Count == 2)
                     {
@@ -57,7 +57,7 @@ namespace Chess_Room_Server
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"Ошибка сервера: {ex.Message}");
+                MessageBox.Show($"Ошибка сервера: {ex.Message}");
             }
         }
 
@@ -73,7 +73,7 @@ namespace Chess_Room_Server
                     if (bytesRead == 0) break; // клиент отключился
 
                     string message = Encoding.UTF8.GetString(buffer, 0, bytesRead);
-                    Console.WriteLine($"Получено сообщение: {message}");
+                    MessageBox.Show($"Получено сообщение: {message}");
 
                     // Переслать сообщение второму игроку
                     Socket opponentSocket = GetOpponentSocket(clientSocket);
@@ -85,7 +85,7 @@ namespace Chess_Room_Server
             }
             catch (SocketException)
             {
-                Console.WriteLine("Клиент отключился.");
+                MessageBox.Show("Клиент отключился.");
             }
             finally
             {
@@ -109,7 +109,7 @@ namespace Chess_Room_Server
             clients[white].Send(Encoding.UTF8.GetBytes("COLOR:WHITE"));
             clients[black].Send(Encoding.UTF8.GetBytes("COLOR:BLACK"));
 
-            Console.WriteLine("Цвета назначены: Белый - клиент " + clients[white].RemoteEndPoint +
+            MessageBox.Show("Цвета назначены: Белый - клиент " + clients[white].RemoteEndPoint +
                               ", Чёрный - клиент " + clients[black].RemoteEndPoint);
         }
 
