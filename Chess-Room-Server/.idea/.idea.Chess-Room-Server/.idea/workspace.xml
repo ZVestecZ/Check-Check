@@ -8,22 +8,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="36685112-ca92-4e70-ab9b-ae62e0b82a2f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.vs/Chess-Room-Server/FileContentIndex/b5268877-e45d-4812-a6db-ef8c0e7cf78f.vsidx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/Chess-Room-Server/FileContentIndex/f8ba9432-976d-4c8c-8bf4-8c1b128324f9.vsidx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/Chess-Room-Server/v17/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/Chess-Room-Server/v17/.suo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/Chess-Room-Server/v17/DocumentLayout.backup.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/Chess-Room-Server/v17/DocumentLayout.backup.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/Chess-Room-Server/v17/DocumentLayout.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/Chess-Room-Server/v17/DocumentLayout.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Form1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Form1.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/Chess-Room-Server.exe" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/Chess-Room-Server.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/Chess-Room-Server.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/Chess-Room-Server.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/Chess-Room-Server.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Chess-Room-Server.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/Chess-Room-Server.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Chess-Room-Server.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/Chess-Room-Server.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Chess-Room-Server.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/Chess-Room-Server.csproj.GenerateResource.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Chess-Room-Server.csproj.GenerateResource.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/Chess-Room-Server.exe" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Chess-Room-Server.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/Chess-Room-Server.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Chess-Room-Server.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ChessGame/Chess/Form1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../ChessGame/Chess/Form1.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.vs/VSWorkspaceState.json" beforeDir="false" afterPath="$PROJECT_DIR$/../.vs/VSWorkspaceState.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.vs/slnx.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/../.vs/slnx.sqlite" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Chess-Room-Server/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Chess-Room-Server/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ChessTests/.vs/ChessTests/FileContentIndex/e23e71a4-a78b-4b70-b799-fc0546a1d576.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ChessTests/.vs/ChessTests/v17/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/../ChessTests/.vs/ChessTests/v17/.suo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ChessTests/.vs/ChessTests/v17/DocumentLayout.backup.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ChessTests/.vs/ChessTests/v17/DocumentLayout.backup.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ChessTests/.vs/ChessTests/v17/DocumentLayout.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ChessTests/.vs/ChessTests/v17/DocumentLayout.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ChessTests/.vs/ChessTests/v17/TestStore/0/001.testlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ChessTests/.vs/ChessTests/v17/TestStore/0/testlog.manifest" beforeDir="false" afterPath="$PROJECT_DIR$/../ChessTests/.vs/ChessTests/v17/TestStore/0/testlog.manifest" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ChessTests/ChessTests/ChessTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../ChessTests/ChessTests/ChessTest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ChessTests/ChessTests/ChessTests.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../ChessTests/ChessTests/ChessTests.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ChessTests/ChessTests/bin/Debug/Chess-Room-Server.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../ChessTests/ChessTests/bin/Debug/Chess-Room-Server.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ChessTests/ChessTests/bin/Debug/Chess-Room-Server.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../ChessTests/ChessTests/bin/Debug/Chess-Room-Server.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ChessTests/ChessTests/bin/Debug/Chess.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../ChessTests/ChessTests/bin/Debug/Chess.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ChessTests/ChessTests/bin/Debug/Chess.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../ChessTests/ChessTests/bin/Debug/Chess.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ChessTests/ChessTests/bin/Debug/ChessTests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../ChessTests/ChessTests/bin/Debug/ChessTests.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ChessTests/ChessTests/bin/Debug/ChessTests.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../ChessTests/ChessTests/bin/Debug/ChessTests.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ChessTests/ChessTests/obj/Debug/ChessTests.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../ChessTests/ChessTests/obj/Debug/ChessTests.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ChessTests/ChessTests/obj/Debug/ChessTests.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../ChessTests/ChessTests/obj/Debug/ChessTests.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ChessTests/ChessTests/obj/Debug/ChessTests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../ChessTests/ChessTests/obj/Debug/ChessTests.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ChessTests/ChessTests/obj/Debug/ChessTests.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../ChessTests/ChessTests/obj/Debug/ChessTests.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ChessTests/ChessTests/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../ChessTests/ChessTests/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +104,10 @@
       <workItem from="1749038956081" duration="1870000" />
       <workItem from="1749042230665" duration="134000" />
       <workItem from="1749043944110" duration="427000" />
-      <workItem from="1749044484410" duration="401000" />
+      <workItem from="1749044484410" duration="892000" />
+      <workItem from="1749107017958" duration="2804000" />
+      <workItem from="1749113816218" duration="267000" />
+      <workItem from="1749129735866" duration="624000" />
     </task>
     <servers />
   </component>
