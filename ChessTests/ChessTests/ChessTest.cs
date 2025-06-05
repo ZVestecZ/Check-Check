@@ -95,5 +95,23 @@ namespace ChessTests
             }
             Assert.IsFalse(resActButtons);
         }
+        [TestMethod]
+        public void Test_Chess_Form1_InsideBorder()
+        {
+            var form1 = new Chess.Form1();
+
+            var inside = form1.InsideBorder(6, 7);
+
+            Assert.IsTrue(inside);
+        }
+        [TestMethod]
+        public void Test_Chess_Form1_InsideBorderWithError()
+        {
+            var form1 = new Chess.Form1();
+
+            var inside = form1.InsideBorder(7, -1);
+
+            Assert.IsFalse(inside);
+        }
     }
 }
