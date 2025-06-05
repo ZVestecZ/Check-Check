@@ -1,4 +1,6 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System.Collections.Generic;
+using System.Drawing;
 
 namespace ChessTests
 {
@@ -112,6 +114,161 @@ namespace ChessTests
             var inside = form1.InsideBorder(7, -1);
 
             Assert.IsFalse(inside);
+        }
+        [TestMethod]
+        public void Test_Chess_Form1_DeterminePath()
+        {
+            var form1 = new Chess.Form1();
+
+            form1.map[5, 3] = 21;
+            form1.currPlayer = 1;
+
+            form1.DeterminePath(5, 3);
+            var res = form1.butts[5, 3].BackColor == Color.Yellow;
+
+            Assert.IsTrue(res);
+        }
+        [TestMethod]
+        public void Test_Chess_Form1_DeterminePathWithError()
+        {
+            var form1 = new Chess.Form1();
+
+            form1.map[5, 3] = 11;
+            form1.currPlayer = 1;
+
+            form1.DeterminePath(5, 3);
+            var res = form1.butts[5, 3].BackColor == Color.Yellow;
+
+            Assert.IsFalse(res);
+        }
+        [TestMethod]
+        public void Test_Chess_Form1_ShowDiagonal()
+        {
+            var form1 = new Chess.Form1();
+
+            form1.ShowDiagonal(5, 3);
+
+            var res = true;
+            var diagI = new List<int>() { 4, 6, 4, 3, 2, 6 };
+            var diagJ = new List<int>() { 2, 4, 4, 5, 6, 2 };
+
+            for (int i = 0; i < diagI.Count; i++)
+            {
+                if (form1.butts[diagI[i], diagJ[i]].BackColor != Color.Yellow)
+                {
+                    res = false;
+                    break;
+                }
+            }
+            Assert.IsTrue(res);
+        }
+        [TestMethod]
+        public void Test_Chess_Form1_ShowVerticalHorizontal()
+        {
+            var form1 = new Chess.Form1();
+            form1.currPlayer = 1;
+            form1.map[5, 3] = 15;
+            form1.ShowVerticalHorizontal(5, 3);
+
+            var res = true;
+
+            for (int i = 2; i < 4; i++)
+            {
+                if (form1.butts[i, 3].BackColor != Color.Yellow)
+                {
+                    res = false;
+                    break;
+                }
+            }
+            for (int i = 0; i < 8; i++)
+            {
+                if (i == 3)
+                {
+                    continue;
+                }
+                if (form1.butts[5, i].BackColor != Color.Yellow)
+                {
+                    res = false;
+                    break;
+                }
+            }
+            Assert.IsTrue(res);
+        }
+        [TestMethod]
+        public void Test_Chess_Form1_ShowVerticalHorizontalNoWay()
+        {
+            var form1 = new Chess.Form1();
+
+            form1.ShowVerticalHorizontal(0, 0);
+
+            var res = true;
+
+            for (int i = 0; i < 8; i++)
+            {
+                for (int j = 0; j < 8; j++)
+                {
+                    if (!res)
+                    {
+                        break;
+                    }
+                    if (form1.butts[i, j].BackColor == Color.Yellow)
+                    {
+                        res = false;
+                        break;
+                    }
+                }
+            }
+            Assert.IsTrue(res);
+        }
+        [TestMethod]
+        public void Test_Chess_Form1_ShowDiagonalNoway()
+        {
+            var form1 = new Chess.Form1();
+
+            form1.ShowDiagonal(0, 0);
+
+            var res = true;
+
+            for (int i = 0; i < 8; i++)
+            {
+                for (int j = 0; j < 8; j++)
+                {
+                    if (!res)
+                    {
+                        break;
+                    }
+                    if (form1.butts[i, j].BackColor == Color.Yellow)
+                    {
+                        res = false;
+                        break;
+                    }
+                }
+            }
+            Assert.IsTrue(res);
+        }
+        [TestMethod]
+        public void Test_Chess_Form1_ShowHorseSteps()
+        {
+            var form1 = new Chess.Form1();
+
+            form1.ShowHorseSteps(6, 0);
+
+            var res = form1.butts[5, 2].BackColor == Color.Yellow
+                && form1.butts[7, 2].BackColor == Color.Yellow;
+            Assert.IsTrue(res);
+        }
+        [TestMethod]
+        public void Test_Chess_Form1_ShowHorseStepsNoWay()
+        {
+            var form1 = new Chess.Form1();
+            form1.map[5, 2] = 11;
+            form1.map[7, 2] = 11;
+
+            form1.ShowHorseSteps(6, 0);
+
+            var res = form1.butts[5, 2].BackColor != Color.Yellow
+                && form1.butts[7, 2].BackColor != Color.Yellow;
+            Assert.IsTrue(res);
         }
     }
 }
