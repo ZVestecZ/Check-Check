@@ -30,13 +30,14 @@
         {
             this.LoginButton = new System.Windows.Forms.Button();
             this.RegistrationButton = new System.Windows.Forms.Button();
+            this.GuestEntranceButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // LoginButton
             // 
-            this.LoginButton.Location = new System.Drawing.Point(13, 13);
+            this.LoginButton.Location = new System.Drawing.Point(270, 80);
             this.LoginButton.Name = "LoginButton";
-            this.LoginButton.Size = new System.Drawing.Size(117, 23);
+            this.LoginButton.Size = new System.Drawing.Size(180, 60);
             this.LoginButton.TabIndex = 0;
             this.LoginButton.Text = "Вход";
             this.LoginButton.UseVisualStyleBackColor = true;
@@ -44,21 +45,36 @@
             // 
             // RegistrationButton
             // 
-            this.RegistrationButton.Location = new System.Drawing.Point(13, 43);
+            this.RegistrationButton.Location = new System.Drawing.Point(270, 231);
             this.RegistrationButton.Name = "RegistrationButton";
-            this.RegistrationButton.Size = new System.Drawing.Size(117, 23);
+            this.RegistrationButton.Size = new System.Drawing.Size(180, 60);
             this.RegistrationButton.TabIndex = 1;
             this.RegistrationButton.Text = "Регистрация";
             this.RegistrationButton.UseVisualStyleBackColor = true;
             this.RegistrationButton.Click += new System.EventHandler(this.RegistrationButton_Click);
             // 
+            // GuestEntranceButton
+            // 
+            this.GuestEntranceButton.Location = new System.Drawing.Point(270, 156);
+            this.GuestEntranceButton.Name = "GuestEntranceButton";
+            this.GuestEntranceButton.Size = new System.Drawing.Size(180, 60);
+            this.GuestEntranceButton.TabIndex = 2;
+            this.GuestEntranceButton.Text = "Вход как гость";
+            this.GuestEntranceButton.UseVisualStyleBackColor = true;
+            this.GuestEntranceButton.Click += new System.EventHandler(this.GuestEntranceButton_Click);
+            // 
             // FirstForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ClientSize = new System.Drawing.Size(704, 381);
+            this.Controls.Add(this.GuestEntranceButton);
             this.Controls.Add(this.RegistrationButton);
             this.Controls.Add(this.LoginButton);
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(720, 420);
+            this.MinimumSize = new System.Drawing.Size(720, 420);
             this.Name = "FirstForm";
             this.Text = "FirstForm";
             this.ResumeLayout(false);
@@ -69,6 +85,7 @@
 
         private System.Windows.Forms.Button LoginButton;
         private System.Windows.Forms.Button RegistrationButton;
+        private System.Windows.Forms.Button GuestEntranceButton;
     }
 }
 

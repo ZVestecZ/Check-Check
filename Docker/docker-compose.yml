@@ -1,0 +1,14 @@
+version: '3.9'
+
+services:
+  chess-postgres:
+    image: postgres:16
+    container_name: chess-postgres
+    environment:
+      POSTGRES_USER: chessuser
+      POSTGRES_PASSWORD: chesspass
+      POSTGRES_DB: chessdb
+    volumes:
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+    ports:
+      - "5432:5432"

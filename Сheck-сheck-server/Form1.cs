@@ -1,18 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Linq.Expressions;
 using System.Net;
 using System.Net.Sockets;
 using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using Сheck_сheck_server.Classes;
-using Сheck_сheck_server.Properties;
+
 
 namespace Сheck_сheck_server
 {
@@ -43,7 +37,6 @@ namespace Сheck_сheck_server
                 isRunning = true;
                 StartServerButton.Text = "Сервер запущен";
                 StopServerButton.Enabled = true;
-                LogMessage("Сервер запущен на 127.0.0.1:8080");
             }
         }
 
@@ -55,7 +48,6 @@ namespace Сheck_сheck_server
                 serverSocket?.Close();
                 StartServerButton.Text = "Запустить сервер";
                 StopServerButton.Enabled = false;
-                LogMessage("Сервер остановлен");
             }
         }
 
@@ -63,23 +55,21 @@ namespace Сheck_сheck_server
         {
             try
             {
-                IPAddress ipAddress = IPAddress.Parse("127.0.0.1");
+                var ipAddress = IPAddress.Parse("127.0.0.1");
                 serverSocket = new Socket(ipAddress.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
                 serverSocket.Bind(new IPEndPoint(ipAddress, 8080));
                 serverSocket.Listen(10);
 
                 while (isRunning)
                 {
-                    Socket clientSocket = serverSocket.Accept();
-                    Thread clientThread = new Thread(() => HandleClient(clientSocket));
+                    var clientSocket = serverSocket.Accept();
+                    var clientThread = new Thread(() => HandleClient(clientSocket));
                     clientThread.IsBackground = true;
                     clientThread.Start();
-                    LogMessage($"Новое подключение: {clientSocket.RemoteEndPoint}");
                 }
             }
             catch (Exception ex)
             {
-                LogMessage($"Ошибка сервера: {ex.Message}");
             }
         }
 
@@ -90,7 +80,6 @@ namespace Сheck_сheck_server
                 byte[] buffer = new byte[1024];
                 int bytesRead = clientSocket.Receive(buffer);
                 string request = Encoding.UTF8.GetString(buffer, 0, bytesRead);
-                LogMessage($"Получен запрос: {request}");
 
                 // Обработка создания комнаты
                 if (request.StartsWith("CREATE_GAME:"))
@@ -110,7 +99,6 @@ namespace Сheck_сheck_server
                             games.Add(newGame);
                             clientSocket.Send(Encoding.UTF8.GetBytes($"GAME_CREATED:{roomName}:1/2:PLAYER1"));
                             clientSocket.Send(Encoding.UTF8.GetBytes($":{roomName}"));
-                            LogMessage($"Создана комната: {roomName}");
                         }
                     }
                 }
@@ -166,25 +154,6 @@ namespace Сheck_сheck_server
                         }
                     }
                 }
-                else if (request.StartsWith("SURRENDER:"))
-                {
-                    string roomName = request.Split(':')[1];
-                    lock (gamesLock)
-                    {
-                        Game game = games.Find(g => g.RoomName == roomName);
-                        if (game != null)
-                        {
-                            Socket opponent = game.Player1 == clientSocket ? game.Player2 : game.Player1;
-                            if (opponent != null)
-                            {
-                                opponent.Send(Encoding.UTF8.GetBytes("OPPONENT_SURRENDERED"));
-                            }
-                            games.Remove(game);
-                            clientSocket.Send(Encoding.UTF8.GetBytes("SURRENDER_CONFIRMED"));
-                            LogMessage($"Игрок сдался в комнате: {roomName}");
-                        }
-                    }
-                }
                 // Запрос списка игр
                 // Хз зачем, есть автообновление
 
@@ -192,7 +161,7 @@ namespace Сheck_сheck_server
                 {
                     lock (gamesLock)
                     {
-                        StringBuilder gameList = new StringBuilder();
+                        var gameList = new StringBuilder();
                         foreach (var game in games)
                         {
                             int playersCount = (game.Player1 != null ? 1 : 0) + (game.Player2 != null ? 1 : 0);
@@ -204,27 +173,11 @@ namespace Сheck_сheck_server
             }
             catch (Exception ex)
             {
-                LogMessage($"Ошибка обработки клиента: {ex.Message}");
             }
             finally
             {
                 clientSocket.Shutdown(SocketShutdown.Both);
                 clientSocket.Close();
-            }
-        }
-
-        private void LogMessage(string message)
-        {
-            if (LogTextBox.InvokeRequired)
-            {
-                LogTextBox.Invoke(new Action(() =>
-                {
-                    LogTextBox.AppendText($"{DateTime.Now:HH:mm:ss} - {message}{Environment.NewLine}");
-                }));
-            }
-            else
-            {
-                LogTextBox.AppendText($"{DateTime.Now:HH:mm:ss} - {message}{Environment.NewLine}");
             }
         }
     }

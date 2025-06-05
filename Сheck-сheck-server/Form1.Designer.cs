@@ -30,7 +30,6 @@
         {
             this.StartServerButton = new System.Windows.Forms.Button();
             this.StopServerButton = new System.Windows.Forms.Button();
-            this.LogTextBox = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // StartServerButton
@@ -53,26 +52,20 @@
             this.StopServerButton.UseVisualStyleBackColor = true;
             this.StopServerButton.Click += new System.EventHandler(this.StopServerButton_Click);
             // 
-            // LogTextBox
-            // 
-            this.LogTextBox.Location = new System.Drawing.Point(383, 15);
-            this.LogTextBox.Name = "LogTextBox";
-            this.LogTextBox.Size = new System.Drawing.Size(100, 20);
-            this.LogTextBox.TabIndex = 2;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(800, 435);
-            this.Controls.Add(this.LogTextBox);
+            this.ClientSize = new System.Drawing.Size(234, 81);
             this.Controls.Add(this.StopServerButton);
             this.Controls.Add(this.StartServerButton);
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(250, 120);
+            this.MinimumSize = new System.Drawing.Size(250, 120);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -80,7 +73,6 @@
 
         private System.Windows.Forms.Button StartServerButton;
         private System.Windows.Forms.Button StopServerButton;
-        private System.Windows.Forms.TextBox LogTextBox;
     }
 }
 

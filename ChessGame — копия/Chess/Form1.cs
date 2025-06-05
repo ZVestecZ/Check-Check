@@ -5,6 +5,7 @@ using System.Net.Sockets;
 using System.Text;
 using System.Threading;
 using System.Windows.Forms;
+using System.IO;
 
 namespace Chess
 {
@@ -13,6 +14,7 @@ namespace Chess
         private Socket clientSocket;
         private string playerColor;
         private Thread listenThread;
+        private static readonly string logFilePath = "chess_log.txt";
 
 
         public Image chessSprites;
@@ -41,8 +43,7 @@ namespace Chess
             InitializeComponent();
             ConnectToServer();
 
-            chessSprites = new Bitmap("Z:\\Щарпы\\Check-check\\ChessGame\\Chess\\chess .png"); 
-            //Не забудь поменять
+            chessSprites = Properties.Resources.chess;
 
             Init();
         }
@@ -67,28 +68,28 @@ namespace Chess
 
         public void CreateMap()
         {
-            for(int i = 0; i < 8; i++)
+            for (int i = 0; i < 8; i++)
             {
                 for (int j = 0; j < 8; j++)
                 {
                     butts[i, j] = new Button();
 
-                    Button butt = new Button();
+                    var butt = new Button();
                     butt.Size = new Size(50, 50);
-                    butt.Location = new Point(j*50,i*50);
+                    butt.Location = new Point(j * 50, i * 50);
 
-                    switch (map[i, j]/10)
+                    switch (map[i, j] / 10)
                     {
                         case 1:
                             Image part = new Bitmap(50, 50);
                             Graphics g = Graphics.FromImage(part);
-                            g.DrawImage(chessSprites, new Rectangle(0, 0, 50, 50), 0+150*(map[i,j]%10-1), 0, 150, 150, GraphicsUnit.Pixel);
+                            g.DrawImage(chessSprites, new Rectangle(0, 0, 50, 50), 0 + 150 * (map[i, j] % 10 - 1), 0, 150, 150, GraphicsUnit.Pixel);
                             butt.BackgroundImage = part;
                             break;
                         case 2:
                             Image part1 = new Bitmap(50, 50);
                             Graphics g1 = Graphics.FromImage(part1);
-                            g1.DrawImage(chessSprites, new Rectangle(0, 0, 50, 50), 0 + 150 * (map[i, j] % 10-1), 150, 150, 150, GraphicsUnit.Pixel);
+                            g1.DrawImage(chessSprites, new Rectangle(0, 0, 50, 50), 0 + 150 * (map[i, j] % 10 - 1), 150, 150, 150, GraphicsUnit.Pixel);
                             butt.BackgroundImage = part1;
                             break;
                     }
@@ -104,9 +105,11 @@ namespace Chess
         public void OnFigurePress(object sender, EventArgs e)
         {
             if (prevButton != null)
+            {
                 prevButton.BackColor = Color.White;
+            }
 
-            Button pressedButton = sender as Button;
+            var pressedButton = sender as Button;
             int row = pressedButton.Location.Y / 50;
             int col = pressedButton.Location.X / 50;
 
@@ -174,7 +177,15 @@ namespace Chess
                             butts[IcurrFigure + 1 * dir, JcurrFigure].Enabled = true;
                         }
                     }
-                    
+                    if ((currPlayer == 1 && IcurrFigure == 1) || (currPlayer == 2 && IcurrFigure == 6))
+                    {
+                        if (map[IcurrFigure + 2 * dir, JcurrFigure] == 0)
+                        {
+                            butts[IcurrFigure + 2 * dir, JcurrFigure].BackColor = Color.Yellow;
+                            butts[IcurrFigure + 2 * dir, JcurrFigure].Enabled = true;
+                        }
+                    }
+
                     if (InsideBorder(IcurrFigure + 1 * dir, JcurrFigure+1))
                     {
                         if (map[IcurrFigure + 1 * dir, JcurrFigure + 1] != 0 && map[IcurrFigure + 1 * dir, JcurrFigure + 1] / 10 != currPlayer)
@@ -207,12 +218,12 @@ namespace Chess
                     ShowDiagonal(IcurrFigure, JcurrFigure,true);
                     break;
                 case 4:
-                    ShowHorseSteps(IcurrFigure, JcurrFigure);
+                    ShowKnightSteps(IcurrFigure, JcurrFigure);
                     break;
             }
         }
 
-        public void ShowHorseSteps(int IcurrFigure, int JcurrFigure)
+        public void ShowKnightSteps(int IcurrFigure, int JcurrFigure)
         {
             if (InsideBorder(IcurrFigure - 2, JcurrFigure + 1))
             {
@@ -418,19 +429,13 @@ namespace Chess
             }
         }
 
-        public void SwitchPlayer()
-        {
-            if (currPlayer == 1)
-                currPlayer = 2;
-            else currPlayer = 1;
-        }
-
         public void ConnectToServer()
         {
             try
             {
                 clientSocket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
                 clientSocket.Connect(IPAddress.Parse("127.0.0.1"), 8080);
+                Log("Подключено к серверу");
 
                 byte[] buffer = new byte[1024];
                 int received = clientSocket.Receive(buffer);
@@ -441,6 +446,7 @@ namespace Chess
                 else if (response == "COLOR:BLACK")
                     playerColor = "BLACK";
 
+                Log($"Игроку присвоен цвет: {playerColor}");
                 MessageBox.Show($"Вы играете за: {playerColor}");
 
                 listenThread = new Thread(ListenForMoves);
@@ -464,11 +470,50 @@ namespace Chess
                     if (bytesRead == 0) break;
 
                     string move = Encoding.UTF8.GetString(buffer, 0, bytesRead);
+                    Log($"Получено сообщение: {move}");
 
-                    Invoke(new Action(() =>
+                    if (move == "DRAW_REQUEST")
                     {
-                        ApplyOpponentMove(move);
-                    }));
+                        var result = MessageBox.Show("Соперник предлагает ничью. Принять?", "Ничья", MessageBoxButtons.YesNo);
+                        if (result == DialogResult.Yes)
+                        {
+                            SendMove("DRAW_ACCEPT");
+                            MessageBox.Show("Ничья принята.");
+                            Log("Ничья принята");
+                            clientSocket?.Close();
+                            Application.Exit();
+                        }
+                        else
+                        {
+                            SendMove("DRAW_DECLINE");
+                            Log("Ничья отклонена");
+                        }
+                    }
+                    else if (move == "DRAW_DECLINE")
+                    {
+                        MessageBox.Show("Соперник отказался от ничьи.");
+                    }
+                    else if (move == "RESIGN")
+                    {
+                        MessageBox.Show("Соперник сдался. Вы победили.");
+                        Log("Соперник сдался");
+                        clientSocket?.Close();
+                        Application.Exit();
+                    }
+                    else if (move == "DRAW_ACCEPT")
+                    {
+                        MessageBox.Show("Соперник принял ничью. Игра окончена.");
+                        Log("Соперник принял ничью");
+                        clientSocket?.Close();
+                        Application.Exit();
+                    }
+                    else
+                    {
+                        Invoke(new Action(() =>
+                        {
+                            ApplyOpponentMove(move);
+                        }));
+                    }
                 }
             }
             catch
@@ -481,11 +526,14 @@ namespace Chess
         {
             byte[] buffer = Encoding.UTF8.GetBytes(move);
             clientSocket.Send(buffer);
+            Log($"Отправлен ход: {move}");
             currPlayer = (currPlayer == 1) ? 2 : 1;
         }
 
         private void ApplyOpponentMove(string move)
         {
+            Log($"Применение хода соперника: {move}");
+
             string[] parts = move.Split(';');
             var from = parts[0].Split(',');
             var to = parts[1].Split(',');
@@ -502,6 +550,33 @@ namespace Chess
             butts[fromRow, fromCol].BackgroundImage = null;
 
             currPlayer = (currPlayer == 1) ? 2 : 1;
+        }
+
+        private void ResignButton_Click(object sender, EventArgs e)
+        {
+            SendMove("RESIGN");
+            MessageBox.Show("Вы сдались. Поражение.");
+            Log("Игрок сдался");
+            clientSocket?.Close();
+            Application.Exit();
+        }
+
+        private void DrawButton_Click(object sender, EventArgs e)
+        {
+            SendMove("DRAW_REQUEST");
+            Log("Игрок предложил ничью");
+        }
+
+        private void Log(string message)
+        {
+            try
+            {
+                File.AppendAllText(logFilePath, $"{DateTime.Now:yyyy-MM-dd HH:mm:ss} - {message}{Environment.NewLine}");
+            }
+            catch
+            {
+                
+            }
         }
     }
 }

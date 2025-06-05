@@ -28,8 +28,8 @@ namespace Chess_Room_Server
         {
             try
             {
-                IPAddress ipAddress = IPAddress.Parse("127.0.0.1");
-                serverSocket = new Socket(ipAddress.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
+                var ipAddress = IPAddress.Parse("127.0.0.1");
+                var serverSocket = new Socket(ipAddress.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
                 serverSocket.Bind(new IPEndPoint(ipAddress, 8080));
                 serverSocket.Listen(10);
 

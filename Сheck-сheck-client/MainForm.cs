@@ -1,13 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
 using System.Net;
 using System.Net.Sockets;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using Сheck_сheck_client.Classes;
 
@@ -15,6 +11,9 @@ namespace Сheck_сheck_client
 {
     public partial class MainForm : Form
     {
+        string name = "Guest";
+        string login = "-";
+        string rating = "-";
         private System.Windows.Forms.Timer refreshTimer;
         public MainForm()
         {
@@ -31,64 +30,52 @@ namespace Сheck_сheck_client
 
         private void CreateGameButton_Click(object sender, EventArgs e)
         {
-            GameCreationForm gameCreationForm = new GameCreationForm();
-            this.Hide();
-            gameCreationForm.ShowDialog();
-            this.Show();
+            if (string.IsNullOrEmpty(name))
+            {
+                MessageBox.Show("Введите название комнаты", "Ошибка",
+                              MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            try
+            {
+                var socket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
+                socket.Connect(new IPEndPoint(IPAddress.Parse("127.0.0.1"), 8080));
+                socket.Send(Encoding.UTF8.GetBytes($"CREATE_GAME:{name}"));
+
+                byte[] buffer = new byte[1024];
+                int bytesRead = socket.Receive(buffer);
+                string response = Encoding.UTF8.GetString(buffer, 0, bytesRead);
+
+                if (response.StartsWith("GAME_CREATED:"))
+                {
+                    string[] parts = response.Split(':');
+                    string createdRoomName = parts[1];
+                    string players = parts[2];
+                    string playerRole = parts[3];
+
+                    WaitingForm waitingForm = new WaitingForm(createdRoomName, playerRole, socket);
+                    waitingForm.Show();
+                    this.Hide();
+                }
+                else if (response.StartsWith("ERROR:"))
+                {
+                    MessageBox.Show(response.Substring("ERROR:".Length), "Ошибка",
+                                  MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    socket.Close();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Ошибка создания комнаты: {ex.Message}", "Ошибка",
+                              MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         
         private void GamesDataGridView_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.RowIndex >= 0)
-            {
-                var selectedGame = GamesDataGridView.Rows[e.RowIndex].DataBoundItem as GameInfo;
-                if (selectedGame != null)
-                {
-                    try
-                    {
-                        Socket socket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
-                        socket.Connect(new IPEndPoint(IPAddress.Parse("127.0.0.1"), 8080));
-                        socket.Send(Encoding.UTF8.GetBytes($"JOIN_GAME:{selectedGame.Name}"));
-
-                        byte[] buffer = new byte[1024];
-                        int bytesRead = socket.Receive(buffer);
-                        string response = Encoding.UTF8.GetString(buffer, 0, bytesRead);
-
-                        if (response.StartsWith("JOIN_SUCCESS:"))
-                        {
-                            string[] parts = response.Split(':');
-                            string roomName = parts[1];
-                            string players = parts[2];
-                            string playerRole = parts[3];
-                            if (players == "2/2")
-                            {
-                                string symbol = playerRole == "PLAYER1" ? "W" : "B";
-                                GameForm gameForm = new GameForm(roomName, playerRole, socket, symbol);
-                                gameForm.Show();
-                                this.Hide();
-                            }
-                            else
-                            {
-                                WaitingForm waitingForm = new WaitingForm(roomName, playerRole, socket);
-                                waitingForm.Show();
-                                this.Hide();
-                            }
-                        }
-                        else if (response.StartsWith("JOIN_ERROR:"))
-                        {
-                            MessageBox.Show(response.Substring("JOIN_ERROR:".Length), "Ошибка",
-                                        MessageBoxButtons.OK, MessageBoxIcon.Error);
-                            socket.Close();
-                        }
-                    }
-                    catch (Exception ex)
-                    {
-                        MessageBox.Show($"Ошибка подключения: {ex.Message}", "Ошибка",
-                                    MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    }
-                }
-            }
+            
         }
 
         private void ConfigureDataGridView()
@@ -97,21 +84,21 @@ namespace Сheck_сheck_client
             GamesDataGridView.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
 
             // Колонка с названием комнаты
-            DataGridViewTextBoxColumn nameColumn = new DataGridViewTextBoxColumn();
+            var nameColumn = new DataGridViewTextBoxColumn();
             nameColumn.Name = "Name";
             nameColumn.HeaderText = "Название комнаты";
             nameColumn.DataPropertyName = "Name";
             nameColumn.Width = 200;
 
             // Колонка с количеством игроков
-            DataGridViewTextBoxColumn playersColumn = new DataGridViewTextBoxColumn();
+            var playersColumn = new DataGridViewTextBoxColumn();
             playersColumn.Name = "Players";
             playersColumn.HeaderText = "Игроки";
             playersColumn.DataPropertyName = "Players";
             playersColumn.Width = 80;
 
             // Колонка со статусом
-            DataGridViewTextBoxColumn statusColumn = new DataGridViewTextBoxColumn();
+            var statusColumn = new DataGridViewTextBoxColumn();
             statusColumn.Name = "Status";
             statusColumn.HeaderText = "Статус";
             statusColumn.DataPropertyName = "Status";
@@ -218,6 +205,10 @@ namespace Сheck_сheck_client
             base.OnFormClosing(e);
         }
 
-
+        private void button1_Click(object sender, EventArgs e)
+        {
+            var accountForm = new AccountForm(name, login, rating);
+            accountForm.ShowDialog();
+        }
     }
 }

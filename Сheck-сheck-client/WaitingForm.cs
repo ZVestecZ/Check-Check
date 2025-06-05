@@ -1,13 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
 using System.Net.Sockets;
 using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Сheck_сheck_client
@@ -69,21 +63,7 @@ namespace Сheck_сheck_client
 
         private void StartGame(string symbol)
         {
-            if (InvokeRequired)
-            {
-                Invoke(new Action(() =>
-                {
-                    GameForm gameForm = new GameForm(roomName, playerRole, socket, symbol);
-                    gameForm.Show();
-                    this.Close();
-                }));
-            }
-            else
-            {
-                GameForm gameForm = new GameForm(roomName, playerRole, socket, symbol);
-                gameForm.Show();
-                this.Close();
-            }
+            
         }
 
         private void CancelButton_Click(object sender, EventArgs e)
@@ -126,5 +106,6 @@ namespace Сheck_сheck_client
             socket?.Close();
             base.OnFormClosing(e);
         }
+
     }
 }

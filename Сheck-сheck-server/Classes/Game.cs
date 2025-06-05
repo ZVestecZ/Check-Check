@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net.Sockets;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Net.Sockets;
 
 namespace Сheck_сheck_server.Classes
 {
@@ -38,7 +33,7 @@ namespace Сheck_сheck_server.Classes
 
         public GameRoom StartGameRoom(string port)
         {
-            GameRoom newGemeRoom = new GameRoom(port, Player1, Player2);
+            var newGemeRoom = new GameRoom(port, Player1, Player2);
             return newGemeRoom;
         }
     }

@@ -1,54 +1,70 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "Z:\\\u0429\u0430\u0440\u043F\u044B\\Check-check\\\u0421heck-\u0441heck-client\\",
+  "WorkspaceRootPath": "Z:\\C#\\Check-check\\Check-Check\\\u0421heck-\u0441heck-client\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3728964D-A538-427A-924A-AAC62B17F6CF}|\u0421heck-\u0441heck-client.csproj|z:\\\u0449\u0430\u0440\u043F\u044B\\check-check\\\u0441heck-\u0441heck-client\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3728964D-A538-427A-924A-AAC62B17F6CF}|\u0421heck-\u0441heck-client.csproj|z:\\c#\\check-check\\check-check\\\u0441heck-\u0441heck-client\\accountform.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
+      "RelativeMoniker": "D:0:0:{3728964D-A538-427A-924A-AAC62B17F6CF}|\u0421heck-\u0441heck-client.csproj|solutionrelative:accountform.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3728964D-A538-427A-924A-AAC62B17F6CF}|\u0421heck-\u0441heck-client.csproj|z:\\c#\\check-check\\check-check\\\u0441heck-\u0441heck-client\\accountform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3728964D-A538-427A-924A-AAC62B17F6CF}|\u0421heck-\u0441heck-client.csproj|solutionrelative:accountform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3728964D-A538-427A-924A-AAC62B17F6CF}|\u0421heck-\u0441heck-client.csproj|z:\\c#\\check-check\\check-check\\\u0441heck-\u0441heck-client\\accountform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3728964D-A538-427A-924A-AAC62B17F6CF}|\u0421heck-\u0441heck-client.csproj|solutionrelative:accountform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3728964D-A538-427A-924A-AAC62B17F6CF}|\u0421heck-\u0441heck-client.csproj|Z:\\C#\\Check-check\\Check-Check\\\u0421heck-\u0441heck-client\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3728964D-A538-427A-924A-AAC62B17F6CF}|\u0421heck-\u0441heck-client.csproj|solutionrelative:mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3728964D-A538-427A-924A-AAC62B17F6CF}|\u0421heck-\u0441heck-client.csproj|Z:\\\u0429\u0430\u0440\u043F\u044B\\Check-check\\\u0421heck-\u0441heck-client\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{3728964D-A538-427A-924A-AAC62B17F6CF}|\u0421heck-\u0441heck-client.csproj|Z:\\C#\\Check-check\\Check-Check\\\u0421heck-\u0441heck-client\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{3728964D-A538-427A-924A-AAC62B17F6CF}|\u0421heck-\u0441heck-client.csproj|solutionrelative:mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3728964D-A538-427A-924A-AAC62B17F6CF}|\u0421heck-\u0441heck-client.csproj|Z:\\\u0429\u0430\u0440\u043F\u044B\\Check-check\\\u0421heck-\u0441heck-client\\classes\\gameinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3728964D-A538-427A-924A-AAC62B17F6CF}|\u0421heck-\u0441heck-client.csproj|solutionrelative:classes\\gameinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3728964D-A538-427A-924A-AAC62B17F6CF}|\u0421heck-\u0441heck-client.csproj|Z:\\\u0429\u0430\u0440\u043F\u044B\\Check-check\\\u0421heck-\u0441heck-client\\waitingform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3728964D-A538-427A-924A-AAC62B17F6CF}|\u0421heck-\u0441heck-client.csproj|solutionrelative:waitingform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3728964D-A538-427A-924A-AAC62B17F6CF}|\u0421heck-\u0441heck-client.csproj|Z:\\\u0429\u0430\u0440\u043F\u044B\\Check-check\\\u0421heck-\u0441heck-client\\waitingform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{3728964D-A538-427A-924A-AAC62B17F6CF}|\u0421heck-\u0441heck-client.csproj|solutionrelative:waitingform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3728964D-A538-427A-924A-AAC62B17F6CF}|\u0421heck-\u0441heck-client.csproj|Z:\\\u0429\u0430\u0440\u043F\u044B\\Check-check\\\u0421heck-\u0441heck-client\\gameform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3728964D-A538-427A-924A-AAC62B17F6CF}|\u0421heck-\u0441heck-client.csproj|solutionrelative:gameform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3728964D-A538-427A-924A-AAC62B17F6CF}|\u0421heck-\u0441heck-client.csproj|Z:\\\u0429\u0430\u0440\u043F\u044B\\Check-check\\\u0421heck-\u0441heck-client\\gamecreationform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{3728964D-A538-427A-924A-AAC62B17F6CF}|\u0421heck-\u0441heck-client.csproj|solutionrelative:gamecreationform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3728964D-A538-427A-924A-AAC62B17F6CF}|\u0421heck-\u0441heck-client.csproj|Z:\\\u0429\u0430\u0440\u043F\u044B\\Check-check\\\u0421heck-\u0441heck-client\\gamecreationform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3728964D-A538-427A-924A-AAC62B17F6CF}|\u0421heck-\u0441heck-client.csproj|solutionrelative:gamecreationform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3728964D-A538-427A-924A-AAC62B17F6CF}|\u0421heck-\u0441heck-client.csproj|Z:\\\u0429\u0430\u0440\u043F\u044B\\Check-check\\\u0421heck-\u0441heck-client\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3728964D-A538-427A-924A-AAC62B17F6CF}|\u0421heck-\u0441heck-client.csproj|solutionrelative:loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3728964D-A538-427A-924A-AAC62B17F6CF}|\u0421heck-\u0441heck-client.csproj|Z:\\\u0429\u0430\u0440\u043F\u044B\\Check-check\\\u0421heck-\u0441heck-client\\registrationform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3728964D-A538-427A-924A-AAC62B17F6CF}|\u0421heck-\u0441heck-client.csproj|z:\\c#\\check-check\\check-check\\\u0441heck-\u0441heck-client\\registrationform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3728964D-A538-427A-924A-AAC62B17F6CF}|\u0421heck-\u0441heck-client.csproj|solutionrelative:registrationform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3728964D-A538-427A-924A-AAC62B17F6CF}|\u0421heck-\u0441heck-client.csproj|Z:\\\u0429\u0430\u0440\u043F\u044B\\Check-check\\\u0421heck-\u0441heck-client\\firstform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3728964D-A538-427A-924A-AAC62B17F6CF}|\u0421heck-\u0441heck-client.csproj|Z:\\C#\\Check-check\\Check-Check\\\u0421heck-\u0441heck-client\\registrationform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3728964D-A538-427A-924A-AAC62B17F6CF}|\u0421heck-\u0441heck-client.csproj|solutionrelative:registrationform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3728964D-A538-427A-924A-AAC62B17F6CF}|\u0421heck-\u0441heck-client.csproj|Z:\\C#\\Check-check\\Check-Check\\\u0421heck-\u0441heck-client\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3728964D-A538-427A-924A-AAC62B17F6CF}|\u0421heck-\u0441heck-client.csproj|solutionrelative:loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3728964D-A538-427A-924A-AAC62B17F6CF}|\u0421heck-\u0441heck-client.csproj|Z:\\C#\\Check-check\\Check-Check\\\u0421heck-\u0441heck-client\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3728964D-A538-427A-924A-AAC62B17F6CF}|\u0421heck-\u0441heck-client.csproj|solutionrelative:loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3728964D-A538-427A-924A-AAC62B17F6CF}|\u0421heck-\u0441heck-client.csproj|Z:\\C#\\Check-check\\Check-Check\\\u0421heck-\u0441heck-client\\waitingform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3728964D-A538-427A-924A-AAC62B17F6CF}|\u0421heck-\u0441heck-client.csproj|solutionrelative:waitingform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3728964D-A538-427A-924A-AAC62B17F6CF}|\u0421heck-\u0441heck-client.csproj|Z:\\C#\\Check-check\\Check-Check\\\u0421heck-\u0441heck-client\\classes\\gameinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3728964D-A538-427A-924A-AAC62B17F6CF}|\u0421heck-\u0441heck-client.csproj|solutionrelative:classes\\gameinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3728964D-A538-427A-924A-AAC62B17F6CF}|\u0421heck-\u0441heck-client.csproj|Z:\\C#\\Check-check\\Check-Check\\\u0421heck-\u0441heck-client\\gameform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3728964D-A538-427A-924A-AAC62B17F6CF}|\u0421heck-\u0441heck-client.csproj|solutionrelative:gameform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3728964D-A538-427A-924A-AAC62B17F6CF}|\u0421heck-\u0441heck-client.csproj|Z:\\C#\\Check-check\\Check-Check\\\u0421heck-\u0441heck-client\\waitingform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3728964D-A538-427A-924A-AAC62B17F6CF}|\u0421heck-\u0441heck-client.csproj|solutionrelative:waitingform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3728964D-A538-427A-924A-AAC62B17F6CF}|\u0421heck-\u0441heck-client.csproj|Z:\\C#\\Check-check\\Check-Check\\\u0421heck-\u0441heck-client\\gameform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3728964D-A538-427A-924A-AAC62B17F6CF}|\u0421heck-\u0441heck-client.csproj|solutionrelative:gameform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3728964D-A538-427A-924A-AAC62B17F6CF}|\u0421heck-\u0441heck-client.csproj|Z:\\C#\\Check-check\\Check-Check\\\u0421heck-\u0441heck-client\\firstform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3728964D-A538-427A-924A-AAC62B17F6CF}|\u0421heck-\u0441heck-client.csproj|solutionrelative:firstform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3728964D-A538-427A-924A-AAC62B17F6CF}|\u0421heck-\u0441heck-client.csproj|Z:\\\u0429\u0430\u0440\u043F\u044B\\Check-check\\\u0421heck-\u0441heck-client\\gameform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{3728964D-A538-427A-924A-AAC62B17F6CF}|\u0421heck-\u0441heck-client.csproj|solutionrelative:gameform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{3728964D-A538-427A-924A-AAC62B17F6CF}|\u0421heck-\u0441heck-client.csproj|Z:\\C#\\Check-check\\Check-Check\\\u0421heck-\u0441heck-client\\firstform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3728964D-A538-427A-924A-AAC62B17F6CF}|\u0421heck-\u0441heck-client.csproj|solutionrelative:firstform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -58,7 +74,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -66,144 +82,203 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "FirstForm.cs",
-              "DocumentMoniker": "Z:\\\u0429\u0430\u0440\u043F\u044B\\Check-check\\\u0421heck-\u0441heck-client\\FirstForm.cs",
-              "RelativeDocumentMoniker": "FirstForm.cs",
-              "ToolTip": "Z:\\\u0429\u0430\u0440\u043F\u044B\\Check-check\\\u0421heck-\u0441heck-client\\FirstForm.cs",
-              "RelativeToolTip": "FirstForm.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAQwCAAAAAZAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "AccountForm.resx",
+              "DocumentMoniker": "Z:\\C#\\Check-check\\Check-Check\\\u0421heck-\u0441heck-client\\AccountForm.resx",
+              "RelativeDocumentMoniker": "AccountForm.resx",
+              "ToolTip": "Z:\\C#\\Check-check\\Check-Check\\\u0421heck-\u0441heck-client\\AccountForm.resx",
+              "RelativeToolTip": "AccountForm.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2025-06-05T15:14:30.732Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AccountForm.cs",
+              "DocumentMoniker": "Z:\\C#\\Check-check\\Check-Check\\\u0421heck-\u0441heck-client\\AccountForm.cs",
+              "RelativeDocumentMoniker": "AccountForm.cs",
+              "ToolTip": "Z:\\C#\\Check-check\\Check-Check\\\u0421heck-\u0441heck-client\\AccountForm.cs",
+              "RelativeToolTip": "AccountForm.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAArwDYAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-25T02:20:10.179Z"
+              "WhenOpened": "2025-06-05T14:59:57.311Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AccountForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "Z:\\C#\\Check-check\\Check-Check\\\u0421heck-\u0441heck-client\\AccountForm.cs",
+              "RelativeDocumentMoniker": "AccountForm.cs",
+              "ToolTip": "Z:\\C#\\Check-check\\Check-Check\\\u0421heck-\u0441heck-client\\AccountForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "AccountForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-05T14:51:46.505Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "RegistrationForm.cs",
+              "DocumentMoniker": "Z:\\C#\\Check-check\\Check-Check\\\u0421heck-\u0441heck-client\\RegistrationForm.cs",
+              "RelativeDocumentMoniker": "RegistrationForm.cs",
+              "ToolTip": "Z:\\C#\\Check-check\\Check-Check\\\u0421heck-\u0441heck-client\\RegistrationForm.cs",
+              "RelativeToolTip": "RegistrationForm.cs",
+              "ViewState": "AgIAAGgAAAAAAAAAAAAqwJoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-25T02:20:13.078Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "RegistrationForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "Z:\\C#\\Check-check\\Check-Check\\\u0421heck-\u0441heck-client\\RegistrationForm.cs",
+              "RelativeDocumentMoniker": "RegistrationForm.cs",
+              "ToolTip": "Z:\\C#\\Check-check\\Check-Check\\\u0421heck-\u0441heck-client\\RegistrationForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "RegistrationForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-04T17:50:37.214Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "LoginForm.cs",
+              "DocumentMoniker": "Z:\\C#\\Check-check\\Check-Check\\\u0421heck-\u0441heck-client\\LoginForm.cs",
+              "RelativeDocumentMoniker": "LoginForm.cs",
+              "ToolTip": "Z:\\C#\\Check-check\\Check-Check\\\u0421heck-\u0441heck-client\\LoginForm.cs",
+              "RelativeToolTip": "LoginForm.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAAABEAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-25T02:20:11.881Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "LoginForm.cs",
-              "DocumentMoniker": "Z:\\\u0429\u0430\u0440\u043F\u044B\\Check-check\\\u0421heck-\u0441heck-client\\LoginForm.cs",
+              "Title": "LoginForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "Z:\\C#\\Check-check\\Check-Check\\\u0421heck-\u0441heck-client\\LoginForm.cs",
               "RelativeDocumentMoniker": "LoginForm.cs",
-              "ToolTip": "Z:\\\u0429\u0430\u0440\u043F\u044B\\Check-check\\\u0421heck-\u0441heck-client\\LoginForm.cs",
-              "RelativeToolTip": "LoginForm.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAUwCAAAAANAAAAAAAAAA==",
+              "ToolTip": "Z:\\C#\\Check-check\\Check-Check\\\u0421heck-\u0441heck-client\\LoginForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "LoginForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-25T02:20:11.881Z"
+              "WhenOpened": "2025-06-04T17:27:03.239Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "RegistrationForm.cs",
-              "DocumentMoniker": "Z:\\\u0429\u0430\u0440\u043F\u044B\\Check-check\\\u0421heck-\u0441heck-client\\RegistrationForm.cs",
-              "RelativeDocumentMoniker": "RegistrationForm.cs",
-              "ToolTip": "Z:\\\u0429\u0430\u0440\u043F\u044B\\Check-check\\\u0421heck-\u0441heck-client\\RegistrationForm.cs",
-              "RelativeToolTip": "RegistrationForm.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAAABoAAAAmAAAAAAAAAA==",
+              "DocumentIndex": 15,
+              "Title": "FirstForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "Z:\\C#\\Check-check\\Check-Check\\\u0421heck-\u0441heck-client\\FirstForm.cs",
+              "RelativeDocumentMoniker": "FirstForm.cs",
+              "ToolTip": "Z:\\C#\\Check-check\\Check-Check\\\u0421heck-\u0441heck-client\\FirstForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "FirstForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-25T02:20:13.078Z"
+              "WhenOpened": "2025-06-04T16:16:33.305Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 14,
+              "Title": "FirstForm.cs",
+              "DocumentMoniker": "Z:\\C#\\Check-check\\Check-Check\\\u0421heck-\u0441heck-client\\FirstForm.cs",
+              "RelativeDocumentMoniker": "FirstForm.cs",
+              "ToolTip": "Z:\\C#\\Check-check\\Check-Check\\\u0421heck-\u0441heck-client\\FirstForm.cs",
+              "RelativeToolTip": "FirstForm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-25T02:20:10.179Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "MainForm.cs",
-              "DocumentMoniker": "Z:\\\u0429\u0430\u0440\u043F\u044B\\Check-check\\\u0421heck-\u0441heck-client\\MainForm.cs",
+              "DocumentMoniker": "Z:\\C#\\Check-check\\Check-Check\\\u0421heck-\u0441heck-client\\MainForm.cs",
               "RelativeDocumentMoniker": "MainForm.cs",
-              "ToolTip": "Z:\\\u0429\u0430\u0440\u043F\u044B\\Check-check\\\u0421heck-\u0441heck-client\\MainForm.cs",
+              "ToolTip": "Z:\\C#\\Check-check\\Check-Check\\\u0421heck-\u0441heck-client\\MainForm.cs",
               "RelativeToolTip": "MainForm.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAALMAAAAAAAAAAAAAwNIAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-25T02:25:05.493Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "MainForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "DocumentMoniker": "Z:\\\u0429\u0430\u0440\u043F\u044B\\Check-check\\\u0421heck-\u0441heck-client\\MainForm.cs",
+              "DocumentMoniker": "Z:\\C#\\Check-check\\Check-Check\\\u0421heck-\u0441heck-client\\MainForm.cs",
               "RelativeDocumentMoniker": "MainForm.cs",
-              "ToolTip": "Z:\\\u0429\u0430\u0440\u043F\u044B\\Check-check\\\u0421heck-\u0441heck-client\\MainForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "ToolTip": "Z:\\C#\\Check-check\\Check-Check\\\u0421heck-\u0441heck-client\\MainForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "RelativeToolTip": "MainForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-25T02:00:01.876Z"
+              "WhenOpened": "2025-05-25T02:00:01.876Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "GameCreationForm.cs",
-              "DocumentMoniker": "Z:\\\u0429\u0430\u0440\u043F\u044B\\Check-check\\\u0421heck-\u0441heck-client\\GameCreationForm.cs",
-              "RelativeDocumentMoniker": "GameCreationForm.cs",
-              "ToolTip": "Z:\\\u0429\u0430\u0440\u043F\u044B\\Check-check\\\u0421heck-\u0441heck-client\\GameCreationForm.cs",
-              "RelativeToolTip": "GameCreationForm.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEcAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-25T02:45:58.832Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 13,
               "Title": "GameForm.cs",
-              "DocumentMoniker": "Z:\\\u0429\u0430\u0440\u043F\u044B\\Check-check\\\u0421heck-\u0441heck-client\\GameForm.cs",
+              "DocumentMoniker": "Z:\\C#\\Check-check\\Check-Check\\\u0421heck-\u0441heck-client\\GameForm.cs",
               "RelativeDocumentMoniker": "GameForm.cs",
-              "ToolTip": "Z:\\\u0429\u0430\u0440\u043F\u044B\\Check-check\\\u0421heck-\u0441heck-client\\GameForm.cs",
+              "ToolTip": "Z:\\C#\\Check-check\\Check-Check\\\u0421heck-\u0441heck-client\\GameForm.cs",
               "RelativeToolTip": "GameForm.cs",
-              "ViewState": "AgIAACgAAAAAAAAAAAAiwBUAAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-25T03:59:16.71Z"
+              "WhenOpened": "2025-05-25T03:59:16.71Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "GameCreationForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "DocumentMoniker": "Z:\\\u0429\u0430\u0440\u043F\u044B\\Check-check\\\u0421heck-\u0441heck-client\\GameCreationForm.cs",
-              "RelativeDocumentMoniker": "GameCreationForm.cs",
-              "ToolTip": "Z:\\\u0429\u0430\u0440\u043F\u044B\\Check-check\\\u0421heck-\u0441heck-client\\GameCreationForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "RelativeToolTip": "GameCreationForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-25T02:39:16.312Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 12,
               "Title": "WaitingForm.cs",
-              "DocumentMoniker": "Z:\\\u0429\u0430\u0440\u043F\u044B\\Check-check\\\u0421heck-\u0441heck-client\\WaitingForm.cs",
+              "DocumentMoniker": "Z:\\C#\\Check-check\\Check-Check\\\u0421heck-\u0441heck-client\\WaitingForm.cs",
               "RelativeDocumentMoniker": "WaitingForm.cs",
-              "ToolTip": "Z:\\\u0429\u0430\u0440\u043F\u044B\\Check-check\\\u0421heck-\u0441heck-client\\WaitingForm.cs",
+              "ToolTip": "Z:\\C#\\Check-check\\Check-Check\\\u0421heck-\u0441heck-client\\WaitingForm.cs",
               "RelativeToolTip": "WaitingForm.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAAIIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-25T05:00:48.915Z"
+              "WhenOpened": "2025-05-25T05:00:48.915Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 9,
               "Title": "WaitingForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "DocumentMoniker": "Z:\\\u0429\u0430\u0440\u043F\u044B\\Check-check\\\u0421heck-\u0441heck-client\\WaitingForm.cs",
+              "DocumentMoniker": "Z:\\C#\\Check-check\\Check-Check\\\u0421heck-\u0441heck-client\\WaitingForm.cs",
               "RelativeDocumentMoniker": "WaitingForm.cs",
-              "ToolTip": "Z:\\\u0429\u0430\u0440\u043F\u044B\\Check-check\\\u0421heck-\u0441heck-client\\WaitingForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "ToolTip": "Z:\\C#\\Check-check\\Check-Check\\\u0421heck-\u0441heck-client\\WaitingForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "RelativeToolTip": "WaitingForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-25T02:01:10.085Z"
+              "WhenOpened": "2025-05-25T02:01:10.085Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 11,
               "Title": "GameForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "DocumentMoniker": "Z:\\\u0429\u0430\u0440\u043F\u044B\\Check-check\\\u0421heck-\u0441heck-client\\GameForm.cs",
+              "DocumentMoniker": "Z:\\C#\\Check-check\\Check-Check\\\u0421heck-\u0441heck-client\\GameForm.cs",
               "RelativeDocumentMoniker": "GameForm.cs",
-              "ToolTip": "Z:\\\u0429\u0430\u0440\u043F\u044B\\Check-check\\\u0421heck-\u0441heck-client\\GameForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "ToolTip": "Z:\\C#\\Check-check\\Check-Check\\\u0421heck-\u0441heck-client\\GameForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "RelativeToolTip": "GameForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-25T03:45:33.671Z"
+              "WhenOpened": "2025-05-25T03:45:33.671Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 10,
               "Title": "GameInfo.cs",
-              "DocumentMoniker": "Z:\\\u0429\u0430\u0440\u043F\u044B\\Check-check\\\u0421heck-\u0441heck-client\\Classes\\GameInfo.cs",
+              "DocumentMoniker": "Z:\\C#\\Check-check\\Check-Check\\\u0421heck-\u0441heck-client\\Classes\\GameInfo.cs",
               "RelativeDocumentMoniker": "Classes\\GameInfo.cs",
-              "ToolTip": "Z:\\\u0429\u0430\u0440\u043F\u044B\\Check-check\\\u0421heck-\u0441heck-client\\Classes\\GameInfo.cs",
+              "ToolTip": "Z:\\C#\\Check-check\\Check-Check\\\u0421heck-\u0441heck-client\\Classes\\GameInfo.cs",
               "RelativeToolTip": "Classes\\GameInfo.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-25T05:07:25.418Z"
+              "WhenOpened": "2025-05-25T05:07:25.418Z",
+              "EditorCaption": ""
             }
           ]
         }

@@ -1,12 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
 using System.Net.Sockets;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Сheck_сheck_client
@@ -22,7 +15,7 @@ namespace Сheck_сheck_client
         {
             if (CheckServerAvailability())
             {
-                MainForm mainForm = new MainForm();
+                var mainForm = new MainForm();
                 this.Hide();
                 mainForm.ShowDialog();
                 this.Close();

@@ -1,13 +1,13 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "Z:\\\u0429\u0430\u0440\u043F\u044B\\Check-check\\Chess-Room-Server\\",
+  "WorkspaceRootPath": "Z:\\C#\\Check-check\\Check-Check\\Chess-Room-Server\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{43CC3DF0-5D5C-4F1C-B1DB-3169C82C016B}|Chess-Room-Server.csproj|z:\\\u0449\u0430\u0440\u043F\u044B\\check-check\\chess-room-server\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{43CC3DF0-5D5C-4F1C-B1DB-3169C82C016B}|Chess-Room-Server.csproj|z:\\c#\\check-check\\check-check\\chess-room-server\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{43CC3DF0-5D5C-4F1C-B1DB-3169C82C016B}|Chess-Room-Server.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{43CC3DF0-5D5C-4F1C-B1DB-3169C82C016B}|Chess-Room-Server.csproj|Z:\\\u0429\u0430\u0440\u043F\u044B\\Check-check\\Chess-Room-Server\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{43CC3DF0-5D5C-4F1C-B1DB-3169C82C016B}|Chess-Room-Server.csproj|Z:\\C#\\Check-check\\Check-Check\\Chess-Room-Server\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{43CC3DF0-5D5C-4F1C-B1DB-3169C82C016B}|Chess-Room-Server.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -28,11 +28,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Form1.cs",
-              "DocumentMoniker": "Z:\\\u0429\u0430\u0440\u043F\u044B\\Check-check\\Chess-Room-Server\\Form1.cs",
+              "DocumentMoniker": "Z:\\C#\\Check-check\\Check-Check\\Chess-Room-Server\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "Z:\\\u0429\u0430\u0440\u043F\u044B\\Check-check\\Chess-Room-Server\\Form1.cs",
+              "ToolTip": "Z:\\C#\\Check-check\\Check-Check\\Chess-Room-Server\\Form1.cs",
               "RelativeToolTip": "Form1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAACUAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-01T21:03:57.748Z",
               "EditorCaption": ""
@@ -41,13 +41,12 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "DocumentMoniker": "Z:\\\u0429\u0430\u0440\u043F\u044B\\Check-check\\Chess-Room-Server\\Form1.cs",
+              "DocumentMoniker": "Z:\\C#\\Check-check\\Check-Check\\Chess-Room-Server\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "Z:\\\u0429\u0430\u0440\u043F\u044B\\Check-check\\Chess-Room-Server\\Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "RelativeToolTip": "Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "ToolTip": "Z:\\\u0429\u0430\u0440\u043F\u044B\\Check-check\\Check-Check\\Chess-Room-Server\\Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "..\\..\\..\\..\\\u0429\u0430\u0440\u043F\u044B\\Check-check\\Check-Check\\Chess-Room-Server\\Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-01T21:02:15.145Z",
-              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+              "WhenOpened": "2025-06-01T21:02:15.145Z"
             }
           ]
         }

@@ -35,7 +35,7 @@
             // 
             // CancelButton
             // 
-            this.CancelButton.Location = new System.Drawing.Point(472, 345);
+            this.CancelButton.Location = new System.Drawing.Point(72, 101);
             this.CancelButton.Name = "CancelButton";
             this.CancelButton.Size = new System.Drawing.Size(75, 23);
             this.CancelButton.TabIndex = 0;
@@ -46,7 +46,7 @@
             // RoomNameLabel
             // 
             this.RoomNameLabel.AutoSize = true;
-            this.RoomNameLabel.Location = new System.Drawing.Point(393, 45);
+            this.RoomNameLabel.Location = new System.Drawing.Point(92, 37);
             this.RoomNameLabel.Name = "RoomNameLabel";
             this.RoomNameLabel.Size = new System.Drawing.Size(35, 13);
             this.RoomNameLabel.TabIndex = 1;
@@ -55,7 +55,7 @@
             // StatusLabel
             // 
             this.StatusLabel.AutoSize = true;
-            this.StatusLabel.Location = new System.Drawing.Point(396, 87);
+            this.StatusLabel.Location = new System.Drawing.Point(92, 70);
             this.StatusLabel.Name = "StatusLabel";
             this.StatusLabel.Size = new System.Drawing.Size(35, 13);
             this.StatusLabel.TabIndex = 2;
@@ -65,10 +65,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ClientSize = new System.Drawing.Size(224, 151);
             this.Controls.Add(this.StatusLabel);
             this.Controls.Add(this.RoomNameLabel);
             this.Controls.Add(this.CancelButton);
+            this.MaximumSize = new System.Drawing.Size(240, 190);
+            this.MinimumSize = new System.Drawing.Size(240, 190);
             this.Name = "WaitingForm";
             this.Text = "WaitingForm";
             this.ResumeLayout(false);

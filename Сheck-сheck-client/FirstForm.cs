@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Сheck_сheck_client
@@ -19,7 +12,7 @@ namespace Сheck_сheck_client
 
         private void LoginButton_Click(object sender, EventArgs e)
         {
-            LoginForm loginForm = new LoginForm();
+            var loginForm = new LoginForm();
             this.Hide();
             loginForm.ShowDialog();
             this.Close();
@@ -27,9 +20,17 @@ namespace Сheck_сheck_client
 
         private void RegistrationButton_Click(object sender, EventArgs e)
         {
-            RegistrationForm registrationForm = new RegistrationForm();
+            var registrationForm = new RegistrationForm();
             this.Hide();
             registrationForm.ShowDialog();
+            this.Close();
+        }
+
+        private void GuestEntranceButton_Click(object sender, EventArgs e)
+        {
+            var mainForm = new MainForm();
+            this.Hide();
+            mainForm.ShowDialog();
             this.Close();
         }
     }
