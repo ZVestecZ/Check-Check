@@ -210,5 +210,23 @@ namespace Сheck_сheck_client
             var accountForm = new AccountForm(name, login, rating);
             accountForm.ShowDialog();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            string url = "https://chessday.ru/blog/39-pravila-shahmat";
+            try
+            {
+                var psi = new System.Diagnostics.ProcessStartInfo
+                {
+                    FileName = url,
+                    UseShellExecute = true
+                };
+                System.Diagnostics.Process.Start(psi);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Не удалось открыть ссылку.");
+            }
+        }
     }
 }
