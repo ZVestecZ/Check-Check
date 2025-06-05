@@ -97,6 +97,9 @@ namespace ChessTests
             }
             Assert.IsFalse(resActButtons);
         }
+        /// <summary>
+        /// Тест проверяет работу метода InsideBorder
+        /// </summary>
         [TestMethod]
         public void Test_Chess_Form1_InsideBorder()
         {
@@ -106,6 +109,9 @@ namespace ChessTests
 
             Assert.IsTrue(inside);
         }
+        /// <summary>
+        /// Тест проверяет работу метода InsideBorder для точки за пределами поля
+        /// </summary>
         [TestMethod]
         public void Test_Chess_Form1_InsideBorderWithError()
         {
@@ -115,6 +121,9 @@ namespace ChessTests
 
             Assert.IsFalse(inside);
         }
+        /// <summary>
+        /// Тест проверяет работу метода DeterminePath 
+        /// </summary>
         [TestMethod]
         public void Test_Chess_Form1_DeterminePath()
         {
@@ -128,6 +137,9 @@ namespace ChessTests
 
             Assert.IsTrue(res);
         }
+        /// <summary>
+        /// Тест проверяет работу метода DeterminePath в случае невозможного хода
+        /// </summary>
         [TestMethod]
         public void Test_Chess_Form1_DeterminePathWithError()
         {
@@ -141,6 +153,9 @@ namespace ChessTests
 
             Assert.IsFalse(res);
         }
+        /// <summary>
+        /// Тест проверяет работу метода ShowDiagonal
+        /// </summary>
         [TestMethod]
         public void Test_Chess_Form1_ShowDiagonal()
         {
@@ -162,6 +177,9 @@ namespace ChessTests
             }
             Assert.IsTrue(res);
         }
+        /// <summary>
+        /// Тест проверяет работу метода ShowVerticalHorizontal
+        /// </summary>
         [TestMethod]
         public void Test_Chess_Form1_ShowVerticalHorizontal()
         {
@@ -194,6 +212,9 @@ namespace ChessTests
             }
             Assert.IsTrue(res);
         }
+        /// <summary>
+        /// Тест проверяет работу метода ShowVerticalHorizontal в случае отсутствия ходов
+        /// </summary>
         [TestMethod]
         public void Test_Chess_Form1_ShowVerticalHorizontalNoWay()
         {
@@ -220,6 +241,9 @@ namespace ChessTests
             }
             Assert.IsTrue(res);
         }
+        /// <summary>
+        /// Тест проверяет работу метода ShowDiagonal в случае отсуттствия ходов
+        /// </summary>
         [TestMethod]
         public void Test_Chess_Form1_ShowDiagonalNoway()
         {
@@ -246,6 +270,9 @@ namespace ChessTests
             }
             Assert.IsTrue(res);
         }
+        /// <summary>
+        /// Тест проверяет работу метода ShowHorseSteps.
+        /// </summary>
         [TestMethod]
         public void Test_Chess_Form1_ShowHorseSteps()
         {
@@ -257,6 +284,9 @@ namespace ChessTests
                 && form1.butts[7, 2].BackColor == Color.Yellow;
             Assert.IsTrue(res);
         }
+        /// <summary>
+        /// Тест проверяет работу метода ShowHorseSteps в случае отсутствия ходов
+        /// </summary>
         [TestMethod]
         public void Test_Chess_Form1_ShowHorseStepsNoWay()
         {
@@ -270,6 +300,9 @@ namespace ChessTests
                 && form1.butts[7, 2].BackColor != Color.Yellow;
             Assert.IsTrue(res);
         }
+        /// <summary>
+        /// Тест проверяет работу метода ShowSteps
+        /// </summary>
         [TestMethod]
         public void Test_Chess_Form1_ShowSteps()
         {
@@ -305,6 +338,9 @@ namespace ChessTests
             }
             Assert.IsTrue(res);
         }
+        /// <summary>
+        /// Тест проверяет работу метода ShowSteps в случае отсутствия ходов
+        /// </summary>
         [TestMethod]
         public void Test_Chess_Form1_ShowStepsNoWay()
         {
