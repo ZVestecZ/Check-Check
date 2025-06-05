@@ -9,27 +9,28 @@
   <component name="ChangeListManager">
     <list default="true" id="36685112-ca92-4e70-ab9b-ae62e0b82a2f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/../.vs/VSWorkspaceState.json" beforeDir="false" afterPath="$PROJECT_DIR$/../.vs/VSWorkspaceState.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.vs/slnx.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/../.vs/slnx.sqlite" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Chess-Room-Server/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Chess-Room-Server/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ChessTests/.vs/ChessTests/FileContentIndex/e23e71a4-a78b-4b70-b799-fc0546a1d576.vsidx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ChessTests/.vs/ChessTests/v17/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/../ChessTests/.vs/ChessTests/v17/.suo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ChessTests/.vs/ChessTests/v17/DocumentLayout.backup.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ChessTests/.vs/ChessTests/v17/DocumentLayout.backup.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ChessTests/.vs/ChessTests/v17/DocumentLayout.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ChessTests/.vs/ChessTests/v17/DocumentLayout.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ChessTests/.vs/ChessTests/v17/TestStore/0/001.testlog" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ChessTests/.vs/ChessTests/v17/TestStore/0/testlog.manifest" beforeDir="false" afterPath="$PROJECT_DIR$/../ChessTests/.vs/ChessTests/v17/TestStore/0/testlog.manifest" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ChessTests/ChessTests/ChessTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../ChessTests/ChessTests/ChessTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ChessTests/ChessTests/ChessTests.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../ChessTests/ChessTests/ChessTests.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ChessTests/ChessTests/bin/Debug/Chess-Room-Server.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../ChessTests/ChessTests/bin/Debug/Chess-Room-Server.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ChessTests/ChessTests/bin/Debug/Chess-Room-Server.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../ChessTests/ChessTests/bin/Debug/Chess-Room-Server.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ChessTests/ChessTests/bin/Debug/Chess.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../ChessTests/ChessTests/bin/Debug/Chess.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ChessTests/ChessTests/bin/Debug/Chess.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../ChessTests/ChessTests/bin/Debug/Chess.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ChessTests/ChessTests/bin/Debug/ChessTests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../ChessTests/ChessTests/bin/Debug/ChessTests.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ChessTests/ChessTests/bin/Debug/ChessTests.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../ChessTests/ChessTests/bin/Debug/ChessTests.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ChessTests/ChessTests/obj/Debug/ChessTests.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../ChessTests/ChessTests/obj/Debug/ChessTests.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ChessTests/ChessTests/obj/Debug/ChessTests.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../ChessTests/ChessTests/obj/Debug/ChessTests.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ChessTests/ChessTests/obj/Debug/ChessTests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../ChessTests/ChessTests/obj/Debug/ChessTests.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ChessTests/ChessTests/obj/Debug/ChessTests.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../ChessTests/ChessTests/obj/Debug/ChessTests.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ChessTests/ChessTests/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../ChessTests/ChessTests/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/Chess-Room-Server.exe" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/Chess-Room-Server.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/Chess-Room-Server.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/Chess-Room-Server.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/Chess-Room-Server.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Chess-Room-Server.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/Chess-Room-Server.csproj.GenerateResource.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Chess-Room-Server.csproj.GenerateResource.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/Chess-Room-Server.exe" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Chess-Room-Server.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/Chess-Room-Server.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Chess-Room-Server.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Сheck-сheck-client/.vs/Сheck-сheck-client/FileContentIndex/32f20ff7-4421-454a-a7ed-f2dc28ce11d3.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Сheck-сheck-client/.vs/Сheck-сheck-client/FileContentIndex/5867ccd3-edcb-4b61-bd21-23ccedf8f69b.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Сheck-сheck-client/.vs/Сheck-сheck-client/FileContentIndex/729c3ee7-e48f-45d7-9273-3b5788628543.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Сheck-сheck-client/.vs/Сheck-сheck-client/FileContentIndex/7900f4f5-dcdb-49e5-926b-352c6a6eb53c.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Сheck-сheck-client/.vs/Сheck-сheck-client/FileContentIndex/d5f2e1bd-5499-4cc0-a062-839c4a4bdc14.vsidx" beforeDir="false" afterPath="$PROJECT_DIR$/../Сheck-сheck-client/.vs/Сheck-сheck-client/FileContentIndex/d5f2e1bd-5499-4cc0-a062-839c4a4bdc14.vsidx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Сheck-сheck-client/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../Сheck-сheck-client/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Сheck-сheck-client/obj/Debug/Сheck-сheck-client.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../Сheck-сheck-client/obj/Debug/Сheck-сheck-client.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Сheck-сheck-server/bin/Debug/Сheck-сheck-server.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../Сheck-сheck-server/bin/Debug/Сheck-сheck-server.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Сheck-сheck-server/bin/Debug/Сheck-сheck-server.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Сheck-сheck-server/bin/Debug/Сheck-сheck-server.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Сheck-сheck-server/obj/Debug/Сheck-сheck-server.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../Сheck-сheck-server/obj/Debug/Сheck-сheck-server.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Сheck-сheck-server/obj/Debug/Сheck-сheck-server.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../Сheck-сheck-server/obj/Debug/Сheck-сheck-server.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Сheck-сheck-server/obj/Debug/Сheck-сheck-server.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Сheck-сheck-server/obj/Debug/Сheck-сheck-server.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Сheck-сheck-server/obj/Debug/Сheck-сheck-server.csproj.GenerateResource.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../Сheck-сheck-server/obj/Debug/Сheck-сheck-server.csproj.GenerateResource.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Сheck-сheck-server/obj/Debug/Сheck-сheck-server.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../Сheck-сheck-server/obj/Debug/Сheck-сheck-server.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Сheck-сheck-server/obj/Debug/Сheck-сheck-server.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Сheck-сheck-server/obj/Debug/Сheck-сheck-server.pdb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,22 +52,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;.NET Project.Chess-Room-Server.executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;testing&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    ".NET Project.Chess-Room-Server.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/Всеволод/source/repos/Check-Check/Chess-Room-Server/Chess-Room-Server.sln",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="Chess-Room-Server" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
@@ -104,10 +106,9 @@
       <workItem from="1749038956081" duration="1870000" />
       <workItem from="1749042230665" duration="134000" />
       <workItem from="1749043944110" duration="427000" />
-      <workItem from="1749044484410" duration="892000" />
-      <workItem from="1749107017958" duration="2804000" />
-      <workItem from="1749113816218" duration="267000" />
-      <workItem from="1749129735866" duration="624000" />
+      <workItem from="1749044484410" duration="401000" />
+      <workItem from="1749149599332" duration="1162000" />
+      <workItem from="1749152007876" duration="91000" />
     </task>
     <servers />
   </component>

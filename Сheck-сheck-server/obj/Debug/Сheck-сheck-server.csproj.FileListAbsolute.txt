@@ -42,3 +42,13 @@ Z:\C#\Check-check\Check-Check\Сheck-сheck-server\obj\Debug\Сheck-сheck-serve
 Z:\C#\Check-check\Check-Check\Сheck-сheck-server\obj\Debug\Сheck-сheck-server.csproj.CoreCompileInputs.cache
 Z:\C#\Check-check\Check-Check\Сheck-сheck-server\obj\Debug\Сheck-сheck-server.exe
 Z:\C#\Check-check\Check-Check\Сheck-сheck-server\obj\Debug\Сheck-сheck-server.pdb
+C:\Users\Всеволод\source\repos\Check-Check\Сheck-сheck-server\bin\Debug\Сheck-сheck-server.exe.config
+C:\Users\Всеволод\source\repos\Check-Check\Сheck-сheck-server\bin\Debug\Сheck-сheck-server.exe
+C:\Users\Всеволод\source\repos\Check-Check\Сheck-сheck-server\bin\Debug\Сheck-сheck-server.pdb
+C:\Users\Всеволод\source\repos\Check-Check\Сheck-сheck-server\obj\Debug\Сheck-сheck-server.csproj.AssemblyReference.cache
+C:\Users\Всеволод\source\repos\Check-Check\Сheck-сheck-server\obj\Debug\Сheck_сheck_server.Form1.resources
+C:\Users\Всеволод\source\repos\Check-Check\Сheck-сheck-server\obj\Debug\Сheck_сheck_server.Properties.Resources.resources
+C:\Users\Всеволод\source\repos\Check-Check\Сheck-сheck-server\obj\Debug\Сheck-сheck-server.csproj.GenerateResource.cache
+C:\Users\Всеволод\source\repos\Check-Check\Сheck-сheck-server\obj\Debug\Сheck-сheck-server.csproj.CoreCompileInputs.cache
+C:\Users\Всеволод\source\repos\Check-Check\Сheck-сheck-server\obj\Debug\Сheck-сheck-server.exe
+C:\Users\Всеволод\source\repos\Check-Check\Сheck-сheck-server\obj\Debug\Сheck-сheck-server.pdb

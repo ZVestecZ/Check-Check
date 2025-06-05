@@ -11,34 +11,6 @@ namespace ChessTests
     public class ChessTest
     {
         /// <summary>
-        /// Тест проверяет работу метода SwitchPlayer на корректных данных
-        /// </summary>
-        [TestMethod]
-        public void Test_Chess_Form1_SwitchPlayer()
-        {
-            var form1 = new Chess.Form1();
-            var form2 = new Chess.Form1();
-
-            form1.currPlayer = 1;
-            form1.SwitchPlayer();
-
-            Assert.AreEqual(2, form1.currPlayer);
-        }
-        /// <summary>
-        /// Тест проверяет работу метода SwitchPlayer на некорректных данных
-        /// </summary>
-        [TestMethod]
-        public void Test_Chess_Form1_SwitchPlayerWithError()
-        {
-            var form1 = new Chess.Form1();
-            var form2 = new Chess.Form1();
-
-            form1.currPlayer = 12;
-            form1.SwitchPlayer();
-
-            Assert.AreEqual(1, form1.currPlayer);
-        }
-        /// <summary>
         /// Тест проверяет работу метода ActivateAllButtons
         /// </summary>
         [TestMethod]
@@ -226,12 +198,12 @@ namespace ChessTests
 
             for (int i = 0; i < 8; i++)
             {
+                if (!res)
+                {
+                    break;
+                }
                 for (int j = 0; j < 8; j++)
                 {
-                    if (!res)
-                    {
-                        break;
-                    }
                     if (form1.butts[i, j].BackColor == Color.Yellow)
                     {
                         res = false;
@@ -255,12 +227,12 @@ namespace ChessTests
 
             for (int i = 0; i < 8; i++)
             {
-                for (int j = 0; j < 8; j++)
+                if (!res)
                 {
-                    if (!res)
-                    {
-                        break;
-                    }
+                    break;
+                }
+                for (int j = 0; j < 8; j++)
+                {                    
                     if (form1.butts[i, j].BackColor == Color.Yellow)
                     {
                         res = false;
@@ -271,21 +243,21 @@ namespace ChessTests
             Assert.IsTrue(res);
         }
         /// <summary>
-        /// Тест проверяет работу метода ShowHorseSteps.
+        /// Тест проверяет работу метода ShowKnightSteps
         /// </summary>
         [TestMethod]
         public void Test_Chess_Form1_ShowHorseSteps()
         {
             var form1 = new Chess.Form1();
 
-            form1.ShowHorseSteps(6, 0);
+            form1.ShowKnightSteps(6, 0);
 
             var res = form1.butts[5, 2].BackColor == Color.Yellow
                 && form1.butts[7, 2].BackColor == Color.Yellow;
             Assert.IsTrue(res);
         }
         /// <summary>
-        /// Тест проверяет работу метода ShowHorseSteps в случае отсутствия ходов
+        /// Тест проверяет работу метода ShowKnightSteps в случае отсутствия ходов
         /// </summary>
         [TestMethod]
         public void Test_Chess_Form1_ShowHorseStepsNoWay()
@@ -294,14 +266,14 @@ namespace ChessTests
             form1.map[5, 2] = 11;
             form1.map[7, 2] = 11;
 
-            form1.ShowHorseSteps(6, 0);
+            form1.ShowKnightSteps(6, 0);
 
             var res = form1.butts[5, 2].BackColor != Color.Yellow
                 && form1.butts[7, 2].BackColor != Color.Yellow;
             Assert.IsTrue(res);
         }
         /// <summary>
-        /// Тест проверяет работу метода ShowSteps
+        /// Тест проверяет работу метода ShowSteps для ладьи
         /// </summary>
         [TestMethod]
         public void Test_Chess_Form1_ShowSteps()
@@ -334,6 +306,39 @@ namespace ChessTests
                 {
                     res = false;
                     break;
+                }
+            }
+            Assert.IsTrue(res);
+        }
+        /// <summary>
+        /// Тест проверяет работу метода ShowSteps для ладьи
+        /// </summary>
+        [TestMethod]
+        public void Test_Chess_Form1_ShowStepsForKing()
+        {
+            var form1 = new Chess.Form1();
+
+            form1.ShowSteps(4, 4, 11);
+
+
+            var res = true;
+            for (int i = 3; i < 6; i++)
+            {
+                if (!res)
+                {
+                    break;
+                }
+                for (int j = 3; j < 6; j++)
+                {
+                    if (i == 4 && j == 4)
+                    {
+                        continue;
+                    }
+                    if (form1.butts[i, j].BackColor != Color.Yellow)
+                    {
+                        res = false;
+                        break;
+                    }
                 }
             }
             Assert.IsTrue(res);
