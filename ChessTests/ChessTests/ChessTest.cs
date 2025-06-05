@@ -270,5 +270,65 @@ namespace ChessTests
                 && form1.butts[7, 2].BackColor != Color.Yellow;
             Assert.IsTrue(res);
         }
+        [TestMethod]
+        public void Test_Chess_Form1_ShowSteps()
+        {
+            var form1 = new Chess.Form1();
+
+            form1.ShowSteps(4, 4, 15);
+
+
+            var res = true;
+            for (int i = 2; i < 6; i++)
+            {
+                if (i == 4)
+                {
+                    continue;
+                }
+                if (form1.butts[i, 4].BackColor != Color.Yellow)
+                {
+                    res = false;
+                    break;
+                }
+            }
+            for (int i = 0; i < 8; i++)
+            {
+                if (i == 4)
+                {
+                    continue;
+                }
+                if (form1.butts[4, i].BackColor != Color.Yellow)
+                {
+                    res = false;
+                    break;
+                }
+            }
+            Assert.IsTrue(res);
+        }
+        [TestMethod]
+        public void Test_Chess_Form1_ShowStepsNoWay()
+        {
+            var form1 = new Chess.Form1();
+
+            form1.ShowSteps(0, 0, 15);
+
+            var res = true;
+            for (int i = 0; i < 8; i++)
+            {
+                for (int j = 0; j < 8; j++)
+                {
+                    if (!res)
+                    {
+                        break;
+                    }
+                    if (form1.butts[i, j].BackColor == Color.Yellow)
+                    {
+                        res = false;
+                        break;
+                    }
+                }
+            }
+            Assert.IsTrue(res);
+        }
     }
 }
